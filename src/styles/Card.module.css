@@ -1,0 +1,26 @@
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.image {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 20px 20px -20px rgb(0 0 0 / 50%);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+  color: #007857;
+  font-size: 20px;
+}
+
+/* @media screen and (min-width: 640px) {
+
+} */

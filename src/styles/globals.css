@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.swiper-pagination {
+  bottom: 25px !important;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}

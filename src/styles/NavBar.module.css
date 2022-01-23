@@ -3,7 +3,7 @@
   margin: 0;
   height: 6rem;
   border-bottom: 6px solid #007857;
-  /* display: flex; */
+  z-index: 999;
 }
 
 .logoContainer {

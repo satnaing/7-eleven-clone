@@ -1,20 +1,17 @@
 import Image from "next/image";
 import styles from "../styles/NavBar.module.css";
 import Link from "next/link";
+import useToggle from "../hooks/useToggle";
 
 import logo from "../public/logo_711.svg";
 import facebookIcon from "../public/icon_facebook.svg";
 import instagramIcon from "../public/icon_instagram.svg";
 import closeIcon from "../public/icon_close_panel.png";
 import hamburger from "../public/icon_menu_responsive.png";
-import useToggle from "../hooks/useToggle";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useToggle(false);
 
-  const handleMenu = () => {
-    setMenuOpen(true);
-  };
   return (
     <header className={styles.header}>
       <div className={styles.mobileContainer}>

@@ -45,7 +45,7 @@ function HeroSection() {
     </SwiperSlide>
   ));
   return (
-    <>
+    <div className={styles.container}>
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -76,7 +76,7 @@ function HeroSection() {
       >
         {MobileSliders}
       </Swiper>
-    </>
+    </div>
   );
 }
 

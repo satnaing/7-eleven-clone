@@ -1,0 +1,38 @@
+.container {
+  padding: 30px 0.625rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.seeAll {
+  text-align: right;
+  font-weight: bold;
+  color: #007857;
+  margin: 1rem auto;
+}
+
+.seeAll:hover {
+  color: #333;
+}
+
+@media screen and (min-width: 640px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

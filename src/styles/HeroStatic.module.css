@@ -1,0 +1,20 @@
+.heroWeb {
+  display: none;
+}
+
+.heroMobile {
+  display: block;
+  background-color: #007857;
+  border-bottom: 2px solid #007857;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroWeb {
+    display: block;
+    background-color: #007857;
+    border-bottom: 2px solid #007857;
+  }
+  .heroMobile {
+    display: none;
+  }
+}

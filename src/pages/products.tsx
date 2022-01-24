@@ -18,6 +18,7 @@ import CardImg6 from "../public/web-listing-2x-7cafe.png";
 
 import heroImg from "../public/sliders/7-Eleven-Singapore-Products-Details.png";
 import heroImgMobile from "../public/sliders/7-Eleven-Singapore-Products-Details-mobile.png";
+import Header from "../components/Header";
 
 const cards = [
   {
@@ -61,6 +62,7 @@ const cards = [
 const Offer: NextPage = () => {
   return (
     <div>
+      <Header title="Products" />
       <NavBar />
       <HeroStatic imgWeb={heroImg} imgMobile={heroImgMobile} />
       <Section breadcrumb="Products">

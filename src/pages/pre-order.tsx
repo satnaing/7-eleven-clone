@@ -13,6 +13,7 @@ import CardImg1 from "../public/web-listing-sunnyhills-pineapple-cake-sanrio-tot
 
 import heroImg from "../public/sliders/web-banner-listing-2x-sunnyhills-pineapple-cake-sanrio-tote-bag-1880.jpeg";
 import heroImgMobile from "../public/sliders/resp-banner-listing-sunnyhills-pineapple-cake-sanrio-tote-bag-1880.jpeg";
+import Header from "../components/Header";
 
 const cards = [
   {
@@ -25,6 +26,7 @@ const cards = [
 const PreOrder: NextPage = () => {
   return (
     <div>
+      <Header title="Pre-Order" />
       <NavBar />
       <HeroStatic imgWeb={heroImg} imgMobile={heroImgMobile} />
       <Section breadcrumb="Pre-order">

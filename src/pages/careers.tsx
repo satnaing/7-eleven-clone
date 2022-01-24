@@ -15,6 +15,7 @@ import CardImg3 from "../public/img_career_offer.jpeg";
 
 import heroImg from "../public/sliders/banner_careers.jpeg";
 import heroImgMobile from "../public/sliders/banner_careers-jpg-mobile.png";
+import Header from "../components/Header";
 
 const cards = [
   {
@@ -37,6 +38,7 @@ const cards = [
 const Offer: NextPage = () => {
   return (
     <div>
+      <Header title="Careers" />
       <NavBar />
       <HeroStatic imgWeb={heroImg} imgMobile={heroImgMobile} />
       <Section heading="Be part of our high performing team">

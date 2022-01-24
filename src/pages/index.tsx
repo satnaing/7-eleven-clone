@@ -16,6 +16,7 @@ import CardImg5 from "../public/web-banner-7-select-ready-to-eat.jpeg";
 import CardImg6 from "../public/img_thumb_product_cash_withdrawal.jpeg";
 import InfoSection from "../components/InfoSection";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const cards = [
   { img: CardImg, title: "Offers & Contests" },
@@ -32,6 +33,7 @@ const avilCards = [
 const Home: NextPage = () => {
   return (
     <div>
+      <Header title="Home" />
       <NavBar />
       <HeroSection />
       <Section heading="Offers & Contests" seeAllLink="/offer">

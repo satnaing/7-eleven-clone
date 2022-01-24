@@ -22,6 +22,7 @@ import CardImg9 from "../public/web-listing-2x-7cafe.png";
 import heroImg from "../public/sliders/web-banner-listing-convenience-at-supermarket-prices.jpeg";
 import heroImgMobile from "../public/sliders/resp-banner-listing-convenience-at-supermarket-prices.jpeg";
 import HeroStatic from "../components/HeroStatic";
+import Header from "../components/Header";
 
 const cards = [
   { img: CardImg, title: "Convenience At Supermarket Prices" },
@@ -42,6 +43,7 @@ const cards = [
 const Offer: NextPage = () => {
   return (
     <div>
+      <Header title="Offer" />
       <NavBar />
       <HeroStatic imgWeb={heroImg} imgMobile={heroImgMobile} />
       <Section breadcrumb="Offers & Contests">

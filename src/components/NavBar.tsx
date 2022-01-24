@@ -76,9 +76,9 @@ function NavBar() {
             <Link href="/7rewards">7Rewards</Link>
           </li>
           <li
-            className={router.pathname == "/career" ? `${styles.active}` : ""}
+            className={router.pathname == "/careers" ? `${styles.active}` : ""}
           >
-            <Link href="/career">Career</Link>
+            <Link href="/careers">Careers</Link>
           </li>
           <li
             className={

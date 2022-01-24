@@ -22,7 +22,7 @@ const cards = [
   },
 ];
 
-const Offer: NextPage = () => {
+const PreOrder: NextPage = () => {
   return (
     <div>
       <NavBar />
@@ -37,4 +37,4 @@ const Offer: NextPage = () => {
   );
 };
 
-export default Offer;
+export default PreOrder;

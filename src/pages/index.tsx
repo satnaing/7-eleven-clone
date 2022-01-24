@@ -15,6 +15,7 @@ import CardImg4 from "../public/web-banner-meal-kits.png";
 import CardImg5 from "../public/web-banner-7-select-ready-to-eat.jpeg";
 import CardImg6 from "../public/img_thumb_product_cash_withdrawal.jpeg";
 import InfoSection from "../components/InfoSection";
+import Footer from "../components/Footer";
 
 const cards = [
   { img: CardImg, title: "Offers & Contests" },
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
         ))}
       </Section>
       <InfoSection />
+      <Footer />
     </div>
   );
 };

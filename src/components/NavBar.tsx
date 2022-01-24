@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/NavBar.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import useToggle from "../hooks/useToggle";
 
 import logo from "../public/logo_711.svg";
@@ -10,6 +11,7 @@ import closeIcon from "../public/icon_close_panel.png";
 import hamburger from "../public/icon_menu_responsive.png";
 
 function NavBar() {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useToggle(false);
 
   return (
@@ -36,33 +38,53 @@ function NavBar() {
           <Image src={closeIcon} width={28} height={28} />
         </span>
         <ul className={styles.leftMenu}>
-          <li>
+          <li className={router.pathname == "/" ? `${styles.active}` : ""}>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li className={router.pathname == "/offer" ? `${styles.active}` : ""}>
             <Link href="/offer">Offers & Contents</Link>
           </li>
-          <li>
+          <li
+            className={
+              router.pathname == "/pre-order" ? `${styles.active}` : ""
+            }
+          >
             <Link href="/pre-order">Pre-order</Link>
           </li>
-          <li>
+          <li
+            className={router.pathname == "/products" ? `${styles.active}` : ""}
+          >
             <Link href="/products">Products</Link>
           </li>
-          <li>
+          <li
+            className={router.pathname == "/services" ? `${styles.active}` : ""}
+          >
             <Link href="/services">Services</Link>
           </li>
         </ul>
         <ul className={styles.rightMenu}>
-          <li className={styles.rightNav}>
+          <li
+            className={`${
+              router.pathname == "/services" ? `${styles.active}` : ""
+            } ${styles.rightNav}`}
+          >
             <Link href="/locate">Locate</Link>
           </li>
-          <li>
+          <li
+            className={router.pathname == "/7rewards" ? `${styles.active}` : ""}
+          >
             <Link href="/7rewards">7Rewards</Link>
           </li>
-          <li>
+          <li
+            className={router.pathname == "/career" ? `${styles.active}` : ""}
+          >
             <Link href="/career">Career</Link>
           </li>
-          <li>
+          <li
+            className={
+              router.pathname == "/franchising" ? `${styles.active}` : ""
+            }
+          >
             <Link href="/franchising">Franchising</Link>
           </li>
           <li className={styles.socialMedia}>
@@ -86,10 +108,10 @@ function NavBar() {
 <nav className={styles.navBar}>
   <ul className={styles.leftNav}>
     <li>
-      <a href="/home">Home</a>
+      <Link href="/">Home</Link>
     </li>
     <li>
-      <a href="/products">Offers & Contests</a>
+      <Link href="/products">Offers & Contests</Link>
     </li>
     <li>
       <a href="/about">Pre-order</a>

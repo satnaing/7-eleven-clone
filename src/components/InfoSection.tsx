@@ -103,8 +103,8 @@ const FranchiseCard = () => {
       <div className={styles.franchiseTextContainer}>
         <h4 className={styles.careerTitle}>Becoming a Franchisee</h4>
         <p>
-          If you've got what it takes to franchise with 7-Eleven, go ahead and
-          take the first step. More details coming soon.
+          If you&apos;ve got what it takes to franchise with 7-Eleven, go ahead
+          and take the first step. More details coming soon.
         </p>
       </div>
       <div className={styles.franchiseImgContainer}>

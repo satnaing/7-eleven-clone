@@ -32,7 +32,7 @@ const cards = [
   {
     img: CardImg5,
     title:
-      "Singapore’s most generous rebate cards on daily essentials for everyone, everywhere!",
+      "Singapore's most generous rebate cards on daily essentials for everyone, everywhere!",
   },
   { img: CardImg6, title: "Redeem a FREE 7Café on 7Rewards!" },
   { img: CardImg7, title: "Meal Kits 2" },

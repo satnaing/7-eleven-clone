@@ -1,0 +1,191 @@
+.container {
+  padding: 1.875rem 0.625rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.about {
+  background-color: #21b55f;
+  color: white;
+  padding: 2rem;
+}
+
+.imgContainer {
+  width: 100%;
+  margin: auto 0.5rem;
+  transition: all 1s;
+  text-align: center;
+}
+
+.about:hover .imgContainer {
+  padding: 2.25rem;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+
+.readmore {
+  font-weight: bold;
+}
+
+/* Rewards */
+.rewards {
+  padding: 0.5rem 2rem;
+  height: auto;
+  background: url(../public/bg_7rewards.png) no-repeat 50% 110% #e2ae00;
+  background-size: 300px 250px;
+  padding-bottom: 200px;
+}
+
+.rewardsTitle {
+  font-size: 26px;
+}
+
+.rewardDesc {
+  font-size: 1.125rem;
+}
+
+.downloadDesc {
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 1.125rem;
+}
+
+.rewardStores {
+  display: flex;
+}
+
+.rewardStores a {
+  margin: 1rem 0;
+  margin-right: 1rem;
+}
+
+.rewardImageContainer {
+  display: none;
+  transition: all 1s;
+}
+
+.rewards:hover .rewardImageContainer {
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+}
+/* Rewards End */
+
+/* Career */
+.career {
+  background: #f1f1f1;
+  height: 350px;
+  padding: 25px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.careerTitle {
+  font-size: 1.625rem;
+  margin: 0;
+}
+
+.careerTextContainer p {
+  margin-bottom: 0;
+}
+
+.careerImgContainer {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.career:hover .careerImgContainer {
+  padding: 0;
+}
+
+.careerImgContainer img {
+  height: 100%;
+}
+/* Career Ends */
+
+/* Franchisee */
+.franchise {
+  background: #f05830;
+  height: 350px;
+  padding: 25px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.franchiseTextContainer p {
+  margin-bottom: 0;
+}
+
+.franchiseImgContainer {
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.franchise:hover .franchiseImgContainer {
+  padding: 0;
+}
+
+@media screen and (min-width: 870px) {
+  .rewards {
+    background: #ffd750;
+    padding: 0.5rem 2rem;
+    display: flex;
+    height: 350px;
+    padding-bottom: 0;
+    transition: all 0.5s;
+  }
+
+  .rewardImageContainer {
+    padding-top: 2rem;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 350px;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  .rewardImageContainer img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .imgContainer {
+    padding: 3rem;
+    height: 273.33px;
+  }
+
+  .aboutTextContainer {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .about {
+    grid-row: span 2 / span 2;
+    grid-column: span 1 / span 2;
+  }
+
+  .rewards {
+    grid-row: span 1 / span 2;
+    grid-column: span 2 / span 4;
+  }
+}

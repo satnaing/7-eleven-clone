@@ -4,6 +4,7 @@
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   transition: 0.3s;
   background-color: white;
+  cursor: pointer;
 }
 
 .image {
@@ -14,11 +15,30 @@
   box-shadow: 0 20px 20px -20px rgb(0 0 0 / 50%);
 }
 
-.container {
-  padding: 2px 16px;
-  text-align: center;
+.title {
   color: #007857;
   font-size: 20px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.smallMargin {
+  margin: 8px 0;
+}
+
+.container p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 /* @media screen and (min-width: 640px) {
